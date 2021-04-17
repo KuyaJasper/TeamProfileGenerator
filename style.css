@@ -25,3 +25,8 @@
     color: whitesmoke;
     -webkit-text-stroke: 2px black;
 }
+
+#card-container{
+    display: flex;
+    justify-content: center;
+}
