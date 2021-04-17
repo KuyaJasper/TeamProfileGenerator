@@ -5,3 +5,13 @@ const generateHTML = require('./Data/generateHTML');
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
+
+function runApp (){
+
+};
+
+const init = () =>{
+    runApp();
+};
+
+init();
