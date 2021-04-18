@@ -12,7 +12,7 @@ const generateHTML = (teamMembers) => {
             integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="./style.css" />
         <script src="https://kit.fontawesome.com/0d8db3f55e.js" crossorigin="anonymous"></script>
     </head>
     
@@ -63,15 +63,15 @@ function generateTeam(teamMembers) {
 
 const generateManager = (manager) => {
     return `
-            <div class="card bg-info mb-3" style="max-width: 20rem;">
-                <div class="card-header">
+            <div class="card mb-3" style="max-width: 20rem;">
+                <div class="card-header" id="card-title">
                     <h2>${manager.getName()}</h2>
-                    <h4><i class="fas fa-mug-hot"> ${manager.getRole()}</i></h4>
+                    <h2><i class="fas fa-mug-hot"> ${manager.getRole()}</i></h2>
                 </div>
-                <div class="card-body bg-light">
+                <div class="card-body">
                 <p class="card-text">
                     <div class="list-group">
-                        <a href="" class="list-group-item list-group-item-action active">ID: ${manager.getId()}</a>
+                        <a href="" class="list-group-item list-group-item-action active" id="IDtag">ID: ${manager.getId()}</a>
                         <a href="mailto: ${manager.getEmail()}" class="list-group-item list-group-item-action">Email: ${manager.getEmail()}</a>
                         <a href="" class="list-group-item list-group-item-action disabled">Office Number: ${manager.getOfficeNumber()}</a>
                     </div>
@@ -83,15 +83,15 @@ const generateManager = (manager) => {
 
 const generateEngineer = (engineer) => {
     return `
-            <div class="card bg-info mb-3" style="max-width: 20rem;">
-                <div class="card-header">
+            <div class="card mb-3" style="max-width: 20rem;">
+                <div class="card-header" id="card-title">
                     <h2>${engineer.getName()}</h2>
-                    <h4><i class="fas fa-glasses"> ${engineer.getRole()}</i></h4>
+                    <h2><i class="fas fa-glasses"> ${engineer.getRole()}</i></h2>
                 </div>
-                <div class="card-body bg-light">
+                <div class="card-body">
                 <p class="card-text">
                     <div class="list-group">
-                        <a href="" class="list-group-item list-group-item-action active">ID: ${engineer.getId()}</a>
+                        <a href="" class="list-group-item list-group-item-action active" id="IDtag">ID: ${engineer.getId()}</a>
                         <a href="mailto: ${engineer.getEmail()}" class="list-group-item list-group-item-action">Email: ${engineer.getEmail()}</a>
                         <a href="https://github.com/${engineer.getGithub()}" target="_blank" class="list-group-item list-group-item-action">Github: ${engineer.getGithub()}</a>
                     </div>
@@ -103,15 +103,15 @@ const generateEngineer = (engineer) => {
 
 const generateIntern = (intern) => {
     return `
-            <div class="card bg-info mb-3" style="max-width: 20rem;">
-                <div class="card-header">
+            <div class="card mb-3" style="max-width: 20rem;">
+                <div class="card-header" id="card-title">
                     <h2>${intern.getName()}</h2>
-                    <h4><i class="fas fa-user-graduate"> ${intern.getRole()}</i></h4>
+                    <h2><i class="fas fa-user-graduate"> ${intern.getRole()}</i></h2>
                 </div>
                 <div class="card-body bg-light">
                 <p class="card-text">
                     <div class="list-group">
-                        <a href="" class="list-group-item list-group-item-action active">ID: ${intern.getId()}</a>
+                        <a href="" class="list-group-item list-group-item-action active" id="IDtag">ID: ${intern.getId()}</a>
                         <a href="mailto: ${intern.getEmail()}" class="list-group-item list-group-item-action">Email: ${intern.getEmail()}</a>
                         <a href="" class="list-group-item list-group-item-action disabled">School: ${intern.getSchool()}</a>
                     </div>
