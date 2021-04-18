@@ -66,7 +66,7 @@ const generateManager = (manager) => {
             <div class="card mb-3" style="max-width: 20rem;">
                 <div class="card-header" id="card-title">
                     <h2>${manager.getName()}</h2>
-                    <h2><span class="fas fa-mug-hot fa-fw"> ${manager.getRole()}</span></h2>
+                    <h2><span class="fas fa-mug-hot fa-fw"></span>${manager.getRole()}</h2>
                 </div>
                 <div class="card-body">
                 <p class="card-text">
@@ -86,7 +86,7 @@ const generateEngineer = (engineer) => {
             <div class="card mb-3" style="max-width: 20rem;">
                 <div class="card-header" id="card-title">
                     <h2>${engineer.getName()}</h2>
-                    <h2><span class="fas fa-glasses fa-fw"> ${engineer.getRole()}</span></h2>
+                    <h2><span class="fas fa-glasses fa-fw"></span>${engineer.getRole()}</h2>
                 </div>
                 <div class="card-body">
                 <p class="card-text">
@@ -106,7 +106,7 @@ const generateIntern = (intern) => {
             <div class="card mb-3" style="max-width: 20rem;">
                 <div class="card-header" id="card-title">
                     <h2>${intern.getName()}</h2>
-                    <h2><span class="fas fa-user-graduate fa-fw"> ${intern.getRole()}</span></h2>
+                    <h2><span class="fas fa-user-graduate fa-fw"></span>${intern.getRole()}</h2>
                 </div>
                 <div class="card-body bg-light">
                 <p class="card-text">
