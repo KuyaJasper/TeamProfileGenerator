@@ -28,7 +28,7 @@ const generateHTML = (teamMembers) => {
             <div class="row">
                 <div class="team-area col-12 d-flex" id="card-container">
                     <div class="row">
-                        INSERT TEAM MEMBER CARDS HERE
+                        ${generateTeam(teamMembers)}
                     </div>
                 </div>
             </div>
@@ -43,7 +43,82 @@ const generateHTML = (teamMembers) => {
 
 function generateTeam(teamMembers) {
     let html = ""
-    teamMembers.array.forEach(member => {
-        
-    });
+    teamMembers.forEach(member => {
+        switch (member.getRole()) {
+            case "Manager":
+                html += generateManager(member)
+                break;
+            case "Engineer":
+                html += generateEngineer(member)
+                break;
+            case "Intern":
+                html += generateIntern(member)
+                break;
+            default:
+                break;
+        }
+    })
+    return html;
 }
+
+const generateManager = (manager) => {
+    return `
+            <div class="card bg-info mb-3" style="max-width: 20rem;">
+                <div class="card-header">
+                    <h2>${manager.getName()}</h2>
+                    <h4><i class="fas fa-mug-hot"> ${manager.getRole()}</i></h4>
+                </div>
+                <div class="card-body bg-light">
+                <p class="card-text">
+                    <div class="list-group">
+                        <a href="" class="list-group-item list-group-item-action active">ID: ${manager.getId()}</a>
+                        <a href="mailto: ${manager.getEmail()}" class="list-group-item list-group-item-action">Email: ${manager.getEmail()}</a>
+                        <a href="" class="list-group-item list-group-item-action disabled">Office Number: ${manager.getOfficeNumber()}</a>
+                    </div>
+                </p>
+                </div>
+            </div>
+            `
+};
+
+const generateEngineer = (engineer) => {
+    return `
+            <div class="card bg-info mb-3" style="max-width: 20rem;">
+                <div class="card-header">
+                    <h2>${engineer.getName()}</h2>
+                    <h4><i class="fas fa-glasses"> ${engineer.getRole()}</i></h4>
+                </div>
+                <div class="card-body bg-light">
+                <p class="card-text">
+                    <div class="list-group">
+                        <a href="" class="list-group-item list-group-item-action active">ID: ${engineer.getId()}</a>
+                        <a href="mailto: ${engineer.getEmail()}" class="list-group-item list-group-item-action">Email: ${engineer.getEmail()}</a>
+                        <a href="https://github.com/${engineer.getGithub()}" target="_blank" class="list-group-item list-group-item-action">Github: ${engineer.getGithub()}</a>
+                    </div>
+                </p>
+                </div>
+            </div>
+            `
+};
+
+const generateIntern = (intern) => {
+    return `
+            <div class="card bg-info mb-3" style="max-width: 20rem;">
+                <div class="card-header">
+                    <h2>${intern.getName()}</h2>
+                    <h4><i class="fas fa-user-graduate"> ${intern.getRole()}</i></h4>
+                </div>
+                <div class="card-body bg-light">
+                <p class="card-text">
+                    <div class="list-group">
+                        <a href="" class="list-group-item list-group-item-action active">ID: ${intern.getId()}</a>
+                        <a href="mailto: ${intern.getEmail()}" class="list-group-item list-group-item-action">Email: ${intern.getEmail()}</a>
+                        <a href="" class="list-group-item list-group-item-action disabled">School: ${intern.getSchool()}</a>
+                    </div>
+                </p>
+                </div>
+            </div>
+            `
+};
+
+module.exports = generateHTML
