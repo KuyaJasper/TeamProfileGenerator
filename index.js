@@ -156,7 +156,7 @@ function runApp (){
         {
           type: "input",
           name: "gitHub",
-          message: "What is the team Engineer's GitHub?",
+          message: "What is the team Engineer's GitHub Username?",
           validate: answer => {
             if (answer !== "") {
               return true;
