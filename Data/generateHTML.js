@@ -63,7 +63,7 @@ function generateTeam(teamMembers) {
 
 const generateManager = (manager) => {
     return `
-            <div class="card col-lg-4 col-md-6 col-sm-12 mb-3" style="max-width: 20rem;">
+            <div class="card mb-3" style="max-width: 20rem;">
                 <div class="card-header" id="card-title">
                     <h2>${manager.getName()}</h2>
                     <h2><span class="fas fa-mug-hot fa-fw"></span>${manager.getRole()}</h2>
@@ -83,7 +83,7 @@ const generateManager = (manager) => {
 
 const generateEngineer = (engineer) => {
     return `
-            <div class="card col-lg-4 col-md-6 col-sm-12 mb-3" style="max-width: 20rem;">
+            <div class="card mb-3" style="max-width: 20rem;">
                 <div class="card-header" id="card-title">
                     <h2>${engineer.getName()}</h2>
                     <h2><span class="fas fa-glasses fa-fw"></span>${engineer.getRole()}</h2>
@@ -103,7 +103,7 @@ const generateEngineer = (engineer) => {
 
 const generateIntern = (intern) => {
     return `
-            <div class="card col-lg-4 col-md-6 col-sm-12 mb-3" style="max-width: 20rem;">
+            <div class="card mb-3" style="max-width: 20rem;">
                 <div class="card-header" id="card-title">
                     <h2>${intern.getName()}</h2>
                     <h2><span class="fas fa-user-graduate fa-fw"></span>${intern.getRole()}</h2>
