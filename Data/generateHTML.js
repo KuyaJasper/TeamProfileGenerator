@@ -25,8 +25,8 @@ const generateHTML = (teamMembers) => {
             </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="team-area col-12 d-flex" id="card-container">
+            <div class="row col-12 d-flex justify-content-center">
+                <div class="team-area" id="card-container">
                     <div class="row">
                         ${generateTeam(teamMembers)}
                     </div>
