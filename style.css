@@ -12,6 +12,7 @@
 
 .card {
     border: 3px solid black;
+   
 }
 
 .card-header{
@@ -19,14 +20,22 @@
     background-color: cornflowerblue;
 }
 
-.card-title{
-    font-family: 'Roboto', sans-serif;
+#card-title h2 {
     font-size: 40px;
+    font-family: 'Roboto', sans-serif;
     color: whitesmoke;
     -webkit-text-stroke: 2px black;
 }
+.mb-3{
+    margin: 10px;
+
+}
 
 #card-container{
-    display: flex;
+    flex: row;
     justify-content: center;
+}
+
+#IDtag{
+    background-color: cornflowerblue;
 }
