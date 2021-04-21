@@ -1,7 +1,7 @@
 # Team Profile Generator
 
 # Desctiption
-For this application, we used a command line prompts with inquirer to create an html page.
+For this application, we used command line prompts with inquirer to create an html page.
 
 # Table of Contents
   * [Installation](#Installation)
