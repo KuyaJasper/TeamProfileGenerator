@@ -1,0 +1,28 @@
+{
+  "name": "teamprofilegenerator",
+  "version": "1.0.0",
+  "description": "Project for Rutgers Coding Bootcamp using Tests and Node.js",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "install": "^0.13.0",
+    "jest": "^26.6.3",
+    "node": "^15.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KuyaJasper/TeamProfileGenerator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KuyaJasper/TeamProfileGenerator/issues"
+  },
+  "homepage": "https://github.com/KuyaJasper/TeamProfileGenerator#readme"
+}
