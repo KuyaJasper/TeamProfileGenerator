@@ -44,7 +44,9 @@ Follow the prompts, and the index.html file should be created in your folder whe
 
 # Screenshot
 
-![ScreenshotRecording](ENTER SCREENSHOT HERE)
+Example of how deployed application should run:
+
+![ScreenshotRecording](./ScreenShot/ScreenRecording.gif)
 
 # Questions
 
