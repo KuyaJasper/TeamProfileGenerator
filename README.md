@@ -11,6 +11,8 @@ For this application, we used command line prompts with inquirer to create an ht
   * [Questions](#Questions)
 
 # Installation
+Please clone/fork this repository to get the full functionality.
+
 This project was created using 'node.js' Make sure to have node.js installed before moving forward.
 
 To learn how to install Node, [Click Here](https://nodejs.org/en/download/package-manager/).
